@@ -2,9 +2,15 @@
   <dictionary name="adity">
     <words>
       <w>ammount</w>
+      <w>dataref</w>
       <w>datepicker</w>
       <w>favuser</w>
       <w>favusername</w>
+      <w>foramount</w>
+      <w>jully</w>
+      <w>madapter</w>
+      <w>succesfull</w>
+      <w>textview</w>
     </words>
   </dictionary>
 </component>

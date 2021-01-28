@@ -70,6 +70,9 @@ public class All extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
+                    case R.id.calender:startActivity(new Intent(getApplicationContext(),calender_activity_1.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     case R.id.home:startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
@@ -104,7 +107,6 @@ public class All extends AppCompatActivity {
                 //holder.result1.setText(model.getResult());
                 holder.date1.setText(model.getDate());
                 //holder.textView.setText(model.getCarName());
-
                // mProgressCircle.setVisibility(View.INVISIBLE);
             }
             @NonNull

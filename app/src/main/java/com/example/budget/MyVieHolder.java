@@ -6,7 +6,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-class MyVieHolder extends RecyclerView.ViewHolder {
+public class MyVieHolder extends RecyclerView.ViewHolder {
 
     TextView user1  , fuel1 , amount1 , cng1 ,  meter1, result1 , date1  ;
 

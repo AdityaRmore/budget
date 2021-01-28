@@ -12,13 +12,40 @@
         android:background="#FFFFFF"
         >
 
+        <TextView
+            android:id="@+id/textview_foramount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textview_foramount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/result_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:textSize="50dp" />
+
+
+
+
+
+
         <Button
             android:id="@+id/date_picker"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/bgdatepicker"
             android:text="Date" />
@@ -81,7 +108,7 @@
             android:layout_below="@+id/amount_of_fuel"
             android:layout_alignParentStart="true"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -98,7 +125,6 @@
             android:hint="CNG/PETROL"
             android:inputType="text"
             android:alpha="0"
-            app:layout_constraintBottom_toTopOf="@+id/button1"
             app:layout_constraintTop_toTopOf="@+id/fuel"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="100dp" />
@@ -110,7 +136,7 @@
             android:layout_below="@+id/amount_of_fuel"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:layout_toEndOf="@+id/spinner1"
             android:ems="10"
@@ -123,28 +149,146 @@
 
 
 
+
+
+
+
         <Button
-            android:id="@+id/button1"
-            android:layout_width="210dp"
+            android:id="@+id/jan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meter_reading"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="JAN">
+
+        </Button>
+
+        <Button
+            android:id="@+id/feb_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/meter_reading"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="172dp"
-            android:background="@drawable/bgbtnblack"
-            android:text="Submit"
-            tools:layout_editor_absoluteX="161dp" />
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="FEB" />
 
-        <EditText
-            android:id="@+id/result"
+        <Button
+            android:id="@+id/march_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button1"
-            android:alpha="0"
+            android:layout_below="@+id/meter_reading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:text="MAR" />
 
-            android:hint=""
-            android:inputType="number"
-           />
+        <Button
+            android:id="@+id/april_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jan_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:gravity="center_horizontal"
+            android:text="APRIL"/>
+
+        <Button
+            android:id="@+id/may_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/jan_button"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="MAY" />
+
+        <Button
+            android:id="@+id/june_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/march_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:text="JUNE" />
+
+
+        <Button
+            android:id="@+id/jully_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/april_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:gravity="center_horizontal"
+            android:text="JULLY" />
+
+        <Button
+            android:id="@+id/aug_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/may_button"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="AUGUST" />
+
+        <Button
+            android:id="@+id/sep_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/june_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:text="SEP" />
+
+        <Button
+            android:id="@+id/oct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jully_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:gravity="center_horizontal"
+            android:text="OCT" />
+
+        <Button
+            android:id="@+id/nov_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aug_button"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="NOV" />
+
+        <Button
+            android:id="@+id/dec_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sep_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:text="DEC" />
+
+
+
+
+
+
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav_view"

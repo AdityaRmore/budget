@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calender_activity_1"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/jan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:text="JAN"></Button>
+
+    <Button
+        android:id="@+id/feb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="FEB"></Button>
+
+    <Button
+        android:id="@+id/march_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="MAR"></Button>
+
+    <Button
+        android:id="@+id/april_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jan_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_horizontal"
+        android:text="APRIL"></Button>
+
+    <Button
+        android:id="@+id/may_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/jan_button"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="MAY"></Button>
+
+    <Button
+        android:id="@+id/june_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/march_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center_horizontal"
+        android:text="JUNE"></Button>
+
+
+    <Button
+        android:id="@+id/jully_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/april_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_horizontal"
+        android:text="JULLY"></Button>
+
+    <Button
+        android:id="@+id/aug_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/may_button"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="AUGUST"></Button>
+
+    <Button
+        android:id="@+id/sep_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/june_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center_horizontal"
+        android:text="SEP"></Button>
+
+    <Button
+        android:id="@+id/oct_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jully_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_horizontal"
+        android:text="OCT"></Button>
+
+    <Button
+        android:id="@+id/nov_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aug_button"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="NOV"></Button>
+
+    <Button
+        android:id="@+id/dec_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sep_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center_horizontal"
+        android:text="DEC"></Button>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_navigation">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+</RelativeLayout>

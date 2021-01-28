@@ -9,18 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".month_12_dec"></activity>
+        <activity android:name=".month_11_nov" />
+        <activity android:name=".month_10_oct" />
+        <activity android:name=".month_9_sep" />
+        <activity android:name=".month_8_aug" />
+        <activity android:name=".month_7_jully" />
+        <activity android:name=".month_6_june" />
+        <activity android:name=".month_5_may" />
+        <activity android:name=".month_4_april" />
+        <activity android:name=".month_3_march" />
+        <activity android:name=".month_2_feb" />
+        <activity android:name=".calender.feb" />
+        <activity android:name=".row1" />
+        <activity android:name=".calender_activity_1" />
+        <activity
+            android:name=".splash_screen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sign_in" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".sign_in"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".All" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
